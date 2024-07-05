@@ -1,0 +1,67 @@
+body {
+    background-color: #96c2e3; /* Body background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 500px; /* Fixed width for the container */
+    height: 500px; /* Fixed height for the container to maintain square shape */
+    max-width: 90vw; /* Maximum width of 90% of viewport width */
+    max-height: 90vw; /* Maximum height of 90% of viewport width */
+    margin: 15vh auto 0 auto;
+    box-shadow: 0px 0px 43px 17px rgb(7, 7, 7);
+    background-color: #181718; /* Container background color */
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#display {
+    text-align: right;
+    height: 50px;
+    line-height: 50px;
+    padding: 20px 8px;
+    font-size: 30px;
+    background-color: #847981; /* Display background color */
+    color: #333; /* Text color for display */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.buttons {
+    flex-grow: 1; /* Buttons container expands to fill available space */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns of equal width */
+    gap: 1px; /* Gap between grid items */
+    background-color: #fbf9f9; /* Matches container background */
+    border-radius: 20px;
+    overflow: hidden; /* Ensures grid items do not overflow */
+}
+
+.buttons > div {
+    border: 1px solid #999; /* Border for each button */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    cursor: pointer;
+    background-color: #efebeb; /* Button background color */
+}
+
+#equal {
+    background-color: rgb(225, 68, 40);
+    color: white;
+}
+
+.button:hover {
+    background-color: #323330;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
