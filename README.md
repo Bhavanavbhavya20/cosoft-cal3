@@ -1,7 +1,5 @@
 # cosoft-cal3
 
-Name:ELLICHETTY BHAVANA
-
 Company:codsoft
 
 Domain:web development
